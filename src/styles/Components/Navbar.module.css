@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    border: 1px solid yellow;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container ul {
+    display: flex;
+    
+    border: 1px solid red;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container ul li{
+    list-style: none;
+    padding: 0rem 0.5rem;
+}
+
+.container .home{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
