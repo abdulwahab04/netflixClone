@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Components/Navbar.module.css";
 
 export default function Navbar() {
+	console.log('hi');
 	return (
 		<nav className={styles.container}>
 			<h1>
