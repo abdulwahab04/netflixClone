@@ -3,6 +3,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: black;
 }
 
 .container .links {
@@ -33,7 +36,6 @@
   color: white;
   padding: 0.2rem;
   padding-left: 0.5rem;
-  border-radius: 6px;
   font-size: 1rem;
   font-weight: 500;
 }
