@@ -1,0 +1,48 @@
+.container h1 {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100vw;
+}
+
+.cards li {
+  width: 24%;
+  height: 18rem;
+  border-radius: 5px;
+  margin-top: 0.8rem;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  background-size: cover;
+}
+
+.cards li:hover {
+  transform: scale(1.05);
+  transition: ease 0.6s;
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.cards li:first-child {
+  background-image: url("/images/card1.jpg");
+}
+
+.cards li:nth-child(2) {
+  background-image: url("/images/card2.jpg");
+}
+
+.cards li:nth-child(3) {
+  background-image: url("/images/card3.jpg");
+}
+
+.cards li:nth-child(4) {
+  background-image: url("/images/card4.jpg");
+}

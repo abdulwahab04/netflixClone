@@ -74,3 +74,15 @@
   position: absolute;
   left: 1rem; /* Adjust the left position as needed */
 }
+
+.content .playBtn:hover {
+  background-color: white;
+  opacity: 70%;
+  transform: scale(1.1);
+}
+
+.content .infoBtn:hover {
+  background-color: grey;
+  opacity: 70%;
+  transform: scale(1.1);
+}
