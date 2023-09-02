@@ -3,7 +3,6 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Herolanding from "@/components/Herolanding";
 import Card from "@/components/Card";
-import CardSlider from "@/components/Cardslider";
 import styles from "@/styles/Pages/index.module.css";
 
 export default function Home() {
