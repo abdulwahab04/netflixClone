@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "@/styles/Components/Herolanding.module.css";
+import Link from "next/link";
 
 export default function Herolanding() {
   return (
-    <landing className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.logo}>
           <img src="./images/Iconnetflix.png" alt="logo" />
@@ -17,13 +18,13 @@ export default function Herolanding() {
           secret experiments, terrifying supernatural forces and a strange
           little girl.
         </p>
-        <a href="#" className={styles.playBtn}>
+        <Link href={"#"} className={styles.playBtn}>
           Play
-        </a>
-        <a href="#" className={styles.infoBtn}>
+        </Link>
+        <Link href={"#"} className={styles.infoBtn}>
           More Info
-        </a>
+        </Link>
       </div>
-    </landing>
+    </div>
   );
 }

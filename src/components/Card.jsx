@@ -1,26 +1,13 @@
 import React from "react";
 import styles from "@/styles/Components/Card.module.css";
+import Link from "next/link";
 
-export default function Card() {
+export default function Card({ link, image }) {
   return (
-    <card>
-      <div className={styles.container}>
-        <h1> Trending Now</h1>
-        <ul className={styles.cards}>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </div>
-    </card>
+    <div className={styles.container}>
+      <Link href={link}>
+        <img src={image} alt="card" />
+      </Link>
+    </div>
   );
 }
