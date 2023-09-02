@@ -4,18 +4,31 @@ import Navbar from "@/components/Navbar";
 import Herolanding from "@/components/Herolanding";
 import Card from "@/components/Card";
 import styles from "@/styles/Pages/index.module.css";
+import axios from "axios";
 
-export default function Home() {
-
+export default function Home({ contentData }) {
+  console.log(contentData);
   return (
     <div className={styles.container}>
       <Herolanding />
       <div className={styles.carousel}>
-        <Card image="/images/card1.jpg" link="#" />
-        <Card image="/images/card2.jpg" link="#" />
-        <Card image="/images/card3.jpg" link="#" />
-        <Card image="/images/card4.jpg" link="#" />
+        {contentData.map((item) => (
+          <Card image={item.attributes.Image} link="#" />
+        ))}
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  const Response = await axios.get(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/contents?populate=*`
+  );
+  const data = await Response.data.data;
+
+  return {
+    props: {
+      contentData: data,
+    },
+  };
 }
