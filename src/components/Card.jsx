@@ -11,4 +11,4 @@ export default function Card({ link, image }) {
       </Link>
     </div>
   );
-}   
+}

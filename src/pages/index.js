@@ -7,7 +7,6 @@ import styles from "@/styles/Pages/index.module.css";
 import axios from "axios";
 
 export default function Home({ contentData }) {
-  console.log(contentData);
   return (
     <div className={styles.container}>
       <Herolanding />
