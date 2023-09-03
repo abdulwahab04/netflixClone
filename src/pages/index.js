@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
 import Herolanding from "@/components/Herolanding";
 import Card from "@/components/Card";
 import styles from "@/styles/Pages/index.module.css";

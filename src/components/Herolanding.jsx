@@ -25,6 +25,7 @@ export default function Herolanding() {
           More Info
         </Link>
       </div>
+      <div className={styles.blend}/>
     </div>
   );
 }
