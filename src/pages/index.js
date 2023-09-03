@@ -13,7 +13,7 @@ export default function Home({ contentData }) {
       <Herolanding />
       <div className={styles.carousel}>
         {contentData.map((item) => (
-          <Card image={item.attributes.Image} link="#" />
+          <Card image={item.attributes.Image.data.attributes.url} link="#" />
         ))}
       </div>
     </div>
