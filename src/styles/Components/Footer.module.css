@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 10rem 1.5rem 10rem;
+  background-color: rgb(27, 25, 25);
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: lightgray;
+}
+
+.footer div a {
+  padding-top: 1rem;
+  font-size: 14px;
+}
+
+.footer .icons {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  padding-left: 0.8rem;
+}
+
+.footer .icons a {
+  padding-inline-end: 2rem;
+}
+
+.footer .icons img {
+  width: 16rem;
+}
+
+.footer .icons .facebookicon img {
+  width: 10rem;
+}
